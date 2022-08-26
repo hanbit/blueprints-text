@@ -17,7 +17,7 @@
   * "nbviewer" 링크는 nbviewer.ipython.org에서 노트북을 확인합니다.
   * "colab" 링크는 구글 콜랩에서 노트북을 확인합니다(**저자들은 콜랩 사용을 권장합니다)**.
 
-If you run the notebook locally or on Colab, you can execute each cell separately by hitting "Shift-enter". Do not skip cells and don't forget to run the first code cells for the setup.
+노트북을 콜랩이나 로컬 환경에서 실행할 경우, `Shift + Enter` 키를 눌러 셀을 실행할 수 있습니다. 첫 셀부터 차례로 모든 셀을 실행하세요.
 
   * **1장 텍스트 데이터에서 찾는 통찰**
   [[git](ch01/First_Insights.ipynb)]
