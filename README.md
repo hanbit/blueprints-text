@@ -1,137 +1,95 @@
-# Blueprints for Text Analytics Using Python
+# 파이썬 라이브러리를 활용한 텍스트 분석
 
-## Machine Learning Based Solutions for Common Real World (NLP) Applications
-
-[Jens Albrecht](https://www.linkedin.com/in/jens-albrecht), [Sidharth Ramachandran](https://www.linkedin.com/in/sidharthramachandran/), [Christian Winkler](https://www.linkedin.com/in/drchristianwinkler/)
-
-Published by [O'Reilly, 2020](https://www.oreilly.com/library/view/blueprints-for-text/9781492074076/)
-
-![cover](https://learning.oreilly.com/library/cover/9781492074076/250w/)
-
-Find the book at  
-[O'Reilly](https://shop.oreilly.com)  
-[Amazon.com](https://www.amazon.com/Blueprints-Text-Analytics-Using-Python/dp/149207408X)  
-[Amazon.de](https://www.amazon.de/Blueprints-Text-Analytics-using-Python/dp/149207408X)  
-[Amazon.co.uk](https://www.amazon.co.uk/Blueprints-Text-Analytics-Using-Python/dp/149207408X)  
-[Amazon.fr](https://www.amazon.fr/Blueprints-Text-Analytics-Using-Python/dp/149207408X)  
-[Amazon.in](https://www.amazon.in/Blueprints-Text-Analytics-Using-Python-ebook/dp/B08PQ6MWGL/)
-
-**If you like the book or the code examples here, please leave a friendly comment on Amazon!**  
-<img src="rating.png" width="100"/>
-
-## Download your free chapter now! 
-
-[Free download of Chapter 7 "How to Explain a Classifier"](https://get.oreilly.com/ind_blueprints-for-text-analysis-using-python.html).
-
+## 텍스트에서 통찰을 이끌어내는 98가지 자연어 처리 전략
 
 -----------------------------------------------------------------------------------
 
-# Content of this Repository
+## 오류 신고
+코드에서 오류를 발견한다면 저자들의 깃허브에서 [이슈를 남겨주세요](https://github.com/blueprints-for-text-analytics-python/blueprints-text/issues).
 
-**This repository is currently in preparation. Please do not yet send any comments.**
+**스페이시 3.0과 젠심 4.0**
+이 도서의 코드는 스페이시(spaCy) 2.3.2과 젠심(gensim) 3.8.3을 기준으로 작성되어 있습니다. 하지만 현재 스페이시는 3.0이 릴리즈 되었으며 이에 따라 API도 변화되었습니다. 저자들 또한 실습 코드를 스페이시 3.0에 맞춰 업데이트 했습니다. 하지만 textacy는 스페이시 3.0을 지원하지 않으므로 저자들이 수정을 가한 파일을 제공하고 있습니다.
 
-This repository contains the code examples of our O'Reilly book. You will find a subdirectory for each chapter containing a Jupyter notebook and additional files for the setup. 
+## 노트북 실행법
 
-Below you find the links to view the notebooks here on Github or execute them directly on [Google Colab](https://colab.research.google.com/notebooks/intro.ipynb#). In the section thereafter you will find instructions to setup the environment on your local computer.
-
-## Problems and errors
-
-If you discover any problems or have recommendations on how to improve the code, do not hesitate to [create an issue here in the repository](https://github.com/blueprints-for-text-analytics-python/blueprints-text/issues).
-
-For errors in the book text, please use [O'Reilly's errata page](https://www.oreilly.com/catalog/errata.csp?isbn=0636920309222).
-
-**spaCy 3.0 and Gensim 4.0**
-
-The book uses spaCy 2.3.2 and gensim 3.8.3. spaCy 3.0 is now officially release with several new features and a few API changes (https://spacy.io/usage/v3). Gensim 4.0 is in beta (https://github.com/RaRe-Technologies/gensim/releases). 
-
-We are already updating our notebooks. But currently textacy is not yet supporting spaCy 3.0, although work is already in progress (see this [pull request](https://github.com/chartbeat-labs/textacy/pull/322) from us). Until textacy for spaCy 3.0 is released, you can use our own fork for the installation (see blueprints.yaml in this directory). 
-
-## View or Run the Notebooks
-
-For each chapter of the book we provide three links: 
-
-  * "git" opens the notebook for viewing here on Github (sometimes not working because of [Github issue](https://github.com/jupyter/notebook/issues/3555))
-  * "nbviewer" opens the notebook for viewing on nbviewer.ipython.org
-  * "colab" opens a runnable copy on Google's Colab service
+각 노트북은 세 가지 링크를 제공합니다.
+  * "git" 링크는 깃허브에서 노트북을 확인합니다.
+  * "nbviewer" 링크는 nbviewer.ipython.org에서 노트북을 확인합니다.
+  * "colab" 링크는 구글 콜랩에서 노트북을 확인합니다(**저자들은 콜랩 사용을 권장합니다)**.
 
 If you run the notebook locally or on Colab, you can execute each cell separately by hitting "Shift-enter". Do not skip cells and don't forget to run the first code cells for the setup.
 
-  * **Chapter 1: Gaining First Insights from Textual Data**
+  * **1장 텍스트 데이터에서 찾는 통찰**
   [[git](ch01/First_Insights.ipynb)]
   [[nbviewer](https://nbviewer.ipython.org/github/blueprints-for-text-analytics-python/blueprints-text/blob/master/ch01/First_Insights.ipynb)]
   [[colab](https://colab.research.google.com/github/blueprints-for-text-analytics-python/blueprints-text/blob/master/ch01/First_Insights.ipynb)]
-  * **Chapter 2: Extracting Textual Insights with APIs**
+  * **2장 API로 추출하는 텍스트 속 통찰**
   [[git](ch02/API_Data_Extraction.ipynb)]
   [[nbviewer](https://nbviewer.ipython.org/github/blueprints-for-text-analytics-python/blueprints-text/blob/master/ch02/API_Data_Extraction.ipynb)]
   [[colab](https://colab.research.google.com/github/blueprints-for-text-analytics-python/blueprints-text/blob/master/ch02/API_Data_Extraction.ipynb)]
-  * **Chapter 3: Scraping Websites and Extracting Data**
+  * **3장 웹사이트 스크래핑 및 데이터 추출**
   [[git](ch03/Scraping_Extraction.ipynb)]
   [[nbviewer](https://nbviewer.ipython.org/github/blueprints-for-text-analytics-python/blueprints-text/blob/master/ch03/Scraping_Extraction.ipynb)]
   [[Colab](https://colab.research.google.com/github/blueprints-for-text-analytics-python/blueprints-text/blob/master/ch03/Scraping_Extraction.ipynb)]
-  * **Chapter 4: Preparing Textual Data For Statistics and Machine Learning**
+  * **4장 통계 및 머신러닝을 위한 텍스트 데이터 준비**
   [[git](ch04/Data_Preparation.ipynb)]
   [[nbviewer](https://nbviewer.ipython.org/github/blueprints-for-text-analytics-python/blueprints-text/blob/master/ch04/Data_Preparation.ipynb)]
   [[colab](https://colab.research.google.com/github/blueprints-for-text-analytics-python/blueprints-text/blob/master/ch04/Data_Preparation.ipynb)]
-  * **Chapter 5: Feature Engineering and Syntactic Similarity**
+  * **5장 특성 엔지니어링 및 구문 유사성**
   [[git](ch05/Feature_Engineering_Similarity.ipynb)]
   [[nbviewer](https://nbviewer.ipython.org/github/blueprints-for-text-analytics-python/blueprints-text/blob/master/ch05/Feature_Engineering_Similarity.ipynb)]
   [[Colab](https://colab.research.google.com/github/blueprints-for-text-analytics-python/blueprints-text/blob/master/ch05/Feature_Engineering_Similarity.ipynb)]
-  * **Chapter 6: Text Classification Algorithms**
+  * **6장 텍스트 분류 알고리즘**
   [[git](ch06/Text_Classification.ipynb)]
   [[nbviewer](https://nbviewer.ipython.org/github/blueprints-for-text-analytics-python/blueprints-text/blob/master/ch06/Text_Classification.ipynb)]
   [[Colab](https://colab.research.google.com/github/blueprints-for-text-analytics-python/blueprints-text/blob/master/ch06/Text_Classification.ipynb)]
-  * **Chapter 7: How to Explain a Text Classifier**
+  * **7장 텍스트 분류기**
   [[git](ch07/Explainable_AI.ipynb)]
   [[nbviewer](https://nbviewer.ipython.org/github/blueprints-for-text-analytics-python/blueprints-text/blob/master/ch07/Explainable_AI.ipynb)]
   [[Colab](https://colab.research.google.com/github/blueprints-for-text-analytics-python/blueprints-text/blob/master/ch07/Explainable_AI.ipynb)]
-  * **Chapter 8: Unsupervised Methods: Topic Modeling and Clustering**
+  * **8장 비지도 학습: 토픽 모델링 및 클러스터링**
   [[git](ch08/Topic_Modeling_Clustering.ipynb)]
   [[nbviewer](https://nbviewer.ipython.org/github/blueprints-for-text-analytics-python/blueprints-text/blob/master/ch08/Topic_Modeling_Clustering.ipynb)]
   [[Colab](https://colab.research.google.com/github/blueprints-for-text-analytics-python/blueprints-text/blob/master/ch08/Topic_Modeling_Clustering.ipynb)]
-  * **Chapter 9: Text Summarization**
+  * **9장 텍스트 요약**
   [[git](ch09/Text_Summarization.ipynb)]
   [[nbviewer](https://nbviewer.ipython.org/github/blueprints-for-text-analytics-python/blueprints-text/blob/master/ch09/Text_Summarization.ipynb)]
   [[Colab](https://colab.research.google.com/github/blueprints-for-text-analytics-python/blueprints-text/blob/master/ch09/Text_Summarization.ipynb)]
-  * **Chapter 10: Exploring Semantic Relationships with Word Embeddings**
+  * **10장 단어 임베딩으로 의미 관계 탐색**
   [[git](ch10/Embeddings.ipynb)]
   [[nbviewer](https://nbviewer.ipython.org/github/blueprints-for-text-analytics-python/blueprints-text/blob/master/ch10/Embeddings.ipynb)]
   [[colab](https://colab.research.google.com/github/blueprints-for-text-analytics-python/blueprints-text/blob/master/ch10/Embeddings.ipynb)]
-  * **Chapter 11: Performing Sentiment Analysis on Text Data**
+  * **11장 텍스트 데이터를 이용한 감성 분석**
   [[git](ch11/Sentiment_Analysis.ipynb)]
   [[nbviewer](https://nbviewer.ipython.org/github/blueprints-for-text-analytics-python/blueprints-text/blob/master/ch11/Sentiment_Analysis.ipynb)]
   [[colab](https://colab.research.google.com/github/blueprints-for-text-analytics-python/blueprints-text/blob/master/ch11/Sentiment_Analysis.ipynb)]
-  * **Chapter 12: Building a Knowledge Graph**
+  * **12장 지식 그래프 구축**
   [[git](ch12/Knowledge_Graph.ipynb)]
   [[nbviewer](https://nbviewer.ipython.org/github/blueprints-for-text-analytics-python/blueprints-text/blob/master/ch12/Knowledge_Graph.ipynb)]
   [[colab](https://colab.research.google.com/github/blueprints-for-text-analytics-python/blueprints-text/blob/master/ch12/Knowledge_Graph.ipynb)]
-  * **Chapter 13: Using Text Analytics in Production**
+  * **13장 프로덕션에서 텍스트 분석 사용**
   [[git](ch13/)]
   [[app](https://github.com/blueprints-for-text-analytics-python/sentiment-app)]
 
 
-## Local Setup
+## 로컬 환경 설정법
 
-The following instructions should work on Linux, Windows and MacOS. If you are a Windows user familiar with Linux, you should check out the [Windows Subsystem for Linux, Version 2 (WSL2)](https://docs.microsoft.com/en-us/windows/wsl/). This allows to use a Linux system on the Windows machine. However, using native Windows should also be no problem.
-
-It is helpful to install `git` on your machine, but you can also download the full repository from Github as a zip file. If you use `git`, run the following commands from the command line:
-
+`git clone` 명령어를 사용해 저장소를 내려받습니다.
 ```sh
 git clone https://github.com/blueprints-for-text-analytics-python/blueprints-text.git
 cd blueprints-text
 ```
 
-Otherwise download the zip file, unpack it to a location convenient to you, and open a command line terminal in the project directory `blueprints-text`.
+로컬 환경을 구성하기 위해 [Miniconda](https://docs.conda.io/en/latest/miniconda.html)를 추천합니다. [Miniconda 공식 홈페이지](https://docs.conda.io/en/latest/miniconda.html)에서 제공하는 설치 방법을 따라 Miniconda를 설치합니다.
 
-For local setup, we recommend to use [Miniconda](https://docs.conda.io/en/latest/miniconda.html), a minimal version of the popular [Anaconda](https://www.anaconda.com/) distribution that contains only the package manager `conda` and Python. Follow the installation instructions on the [Miniconda Homepage](https://docs.conda.io/en/latest/miniconda.html). If you already have Anaconda or Miniconda installed on your system: That's fine. We will create a separate virtual environment for the blueprints book so that our installation will not interfere with your previous setup.
-
-After installation of Anaconda/Miniconda, run the following command(s) from the project directory:
+Miniconda의 설치를 마쳤다면 프로젝트 디렉터리에서 아래 명령어를 실행합니다.
 
 ```sh
 conda env create --name blueprints --file blueprints.yml
 conda activate blueprints
 ```
 
-The prompt should change after activation and indicate that you are working in the `blueprints` environment. Our installation includes the [Jupyter notebook extensions](https://github.com/ipython-contrib/jupyter_contrib_nbextensions). We suggest to enable the extensions "table of contents" (toc2), "execute time", and "variable inspector" (varInspector):
+환경이 실행되면 프롬프트에 `blueprints` 라는 문구가 출력됩니다. 환경 설정 파일에 추가되어있는 주피터 노트북용 확장기능들을 활성화합니다.
 
 ```sh
 jupyter nbextension enable toc2/main
@@ -139,12 +97,12 @@ jupyter nbextension enable execute_time/ExecuteTime
 jupyter nbextension enable varInspector/main
 ```
 
-Now you can start the Jupyter notebook server:
+이제 주피터 노트북 서버를 실행합니다.
 
 ```sh
 jupyter notebook
 ```
 
-If working on WSL under Windows, add `--no-browser`.
+만약 WSL 환경이라면 `--no-browser` 옵션을 추가하세요.
 
-Browse to the respective chapter and open the notebook file (suffix `.ipynb`)
+이제 각 장마다 있는 `.ipynb`를 열어 노트북을 확인합니다.

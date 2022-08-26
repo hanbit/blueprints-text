@@ -35,9 +35,8 @@ dependencies:
     - nltk
     - spacy>=2.3.2
     # - textacy
-    # use this updated version of textacy to make it install with spacy 3.0
-    # careful - it's not completely tested except for the code in the book
-    # otherwise use spacy=2.3.2
+    # 현재 노트북은 스페이시 3.0을 일부 지원하도록 저자들이 수정한 textacy를 사용합니다.
+    # 이 책의 실습을 위해서만 사용하세요.
     - git+https://github.com/blueprints-for-text-analytics-python/textacy.git
     - gensim
     - pyldavis
